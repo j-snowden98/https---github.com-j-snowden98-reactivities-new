@@ -29,8 +29,6 @@ namespace Application.Activities
                 var activity = await _context.Activities.FindAsync(request.Activity.Id);
 
                 _mapper.Map(request.Activity, activity);
-
-                activity.Title = request.Activity.Title ?? activity.Title;
                 await _context.SaveChangesAsync();
 
                 return Unit.Value;
