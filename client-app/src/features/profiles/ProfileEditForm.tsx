@@ -1,8 +1,7 @@
 import { Formik, Form } from "formik";
 import * as Yup from 'yup';
 import React from "react";
-import { Link } from "react-router-dom";
-import { Button, Header, Segment } from "semantic-ui-react";
+import { Button } from "semantic-ui-react";
 import MyTextArea from "../../app/common/form/MyTextArea";
 import MyTextInput from "../../app/common/form/MyTextInput";
 import { useStore } from "../../app/stores/store";
